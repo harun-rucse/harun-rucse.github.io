@@ -1,0 +1,302 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./src/assets/logo.svg" type="image/x-icon">
+    <title>Harun</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="./dist/output.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="wrapper" class="w-full h-full bg-white dark:bg-[#111111] text-gray-800 dark:text-white">
+        <!-- Header section -->
+        <header>
+            <!-- Mobile menu -->
+            <div class="lg:hidden">
+                <div class="bg-[#f3f6f6] dark:bg-black px-6 py-4 flex justify-between items-center shadow-sm">
+                    <a href="/"><img class="h-[35px]" src="./src/assets/logo.svg" alt="Logo"></a>
+                    <div class="flex items-center gap-5">
+                        <div id="moon"
+                            class="bg-white dark:bg-[#4d4d4d] w-[40px] h-[40px] flex justify-center items-center rounded-full group hover:bg-[#ef4060] cursor-pointer">
+                            <i class="fa-solid fa-moon text-xl group-hover:text-white"></i>
+                        </div>
+                        <div id="sun"
+                            class="hidden bg-white dark:bg-[#4d4d4d] w-[40px] h-[40px] justify-center items-center rounded-full group hover:bg-[#ef4060] cursor-pointer">
+                            <i class="fa-solid fa-sun text-xl group-hover:text-white"></i>
+                        </div>
+                        <div id="open-menu"
+                            class="bg-white w-[40px] h-[40px] flex justify-center items-center rounded-full group hover:bg-[#ef4060] cursor-pointer">
+                            <i class="fa-solid fa-bars text-xl text-black group-hover:text-white"></i>
+                        </div>
+                        <div id="close-menu"
+                            class="hidden bg-white w-[40px] h-[40px] justify-center items-center rounded-full group hover:bg-[#ef4060] cursor-pointer">
+                            <i class="fa-solid fa-xmark text-xl text-black group-hover:text-white"></i>
+                        </div>
+                    </div>
+                </div>
+                <ul id="mobile-menu"
+                    class="w-full bg-white dark:bg-[#1d1d1d] px-5 py-2 hidden flex-col justify-center gap-5 rounded-b-[20px] shadow-md z-50">
+                    <a href="/about.html">
+                        <li class="active flex gap-2 items-center font-medium hover:text-[#fa5252]">
+                            <i class="fa-regular fa-user text-lg"></i>
+                            <span class="text-sm">About</span>
+                        </li>
+                    </a>
+                    <a href="/resume.html">
+                        <li class="flex gap-2 items-center font-medium hover:text-[#fa5252]">
+                            <i class="fa-regular fa-file-lines text-lg"></i>
+                            <span class="text-sm">Resume</span>
+                        </li>
+                    </a>
+                    <a href="/worls.html">
+                        <li class="flex gap-2 items-center font-medium hover:text-[#fa5252]">
+                            <i class="fas fa-briefcase text-lg"></i>
+                            <span class="text-sm">Works</span>
+                        </li>
+                    </a>
+                    <a href="/blogs.html">
+                        <li class="flex gap-2 items-center font-medium hover:text-[#fa5252]">
+                            <i class="fa-brands fa-blogger text-lg"></i>
+                            <span class="text-sm">Blogs</span>
+                        </li>
+                    </a>
+                    <a href="/contact.html">
+                        <li class="flex gap-2 items-center font-medium hover:text-[#fa5252]">
+                            <i class="fa-solid fa-address-book text-lg"></i>
+                            <span class="text-sm">Contacts</span>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+
+            <!-- Desktop menu -->
+            <div class="hidden lg:block">
+                <div class="p-10 flex justify-between items-center">
+                    <a href="/"><img class="h-[75px]" src="./src/assets/logo.svg" alt="Logo"></a>
+                    <div id="desktop-moon"
+                        class="bg-white dark:bg-[#4d4d4d] w-[48px] h-[48px] flex justify-center items-center rounded-full group hover:bg-[#ef4060] cursor-pointer">
+                        <i class="fa-solid fa-moon text-xl group-hover:text-white"></i>
+                    </div>
+                    <div id="desktop-sun"
+                        class="hidden bg-white dark:bg-[#4d4d4d] w-[48px] h-[48px] justify-center items-center rounded-full group hover:bg-[#ef4060] cursor-pointer">
+                        <i class="fa-solid fa-sun text-xl group-hover:text-white"></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main section -->
+        <section class="flex flex-col lg:flex-row lg:ml-6 lg:gap-6">
+            <!-- My Contact Information -->
+            <section
+                class="lg:sticky top-24 lg:w-[45%] lg:h-[58rem] lg:mb-12 py-12 lg:py-2 px-4 md:px-8 lg:px-0 lg:pb-6 lg:bg-white lg:dark:bg-[#111111] rounded-3xl">
+                <h1 class="lg:hidden text-[2.5rem] font-semibold uppercase">About Me</h1>
+                <div class="flex flex-col gap-5 justify-center items-center mt-10">
+                    <img class="w-[230px] rounded-3xl" src="./src/assets/harun.jpg" alt="Avatar">
+                    <div class="flex flex-col items-center gap-2">
+                        <h3 class="text-2xl font-semibold capitalize">Harun Or Rashid</h3>
+                        <p>Mern Stack Devloper</p>
+                    </div>
+                    <div class="flex gap-4">
+                        <a href="/">
+                            <div
+                                class="bg-[#f3f6f6] text-[#1773EA] dark:bg-[#212425] px-4 py-3 rounded-lg flex justify-center items-center shadow hover:bg-[#e7336b] hover:text-white">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </div>
+                        </a>
+                        <a href="/">
+                            <div
+                                class="bg-[#f3f6f6] text-[#1773EA] dark:bg-[#212425] px-4 py-3 rounded-lg flex justify-center items-center shadow hover:bg-[#e7336b] hover:text-white">
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                        </a>
+                        <a href="/">
+                            <div
+                                class="bg-[#f3f6f6] text-[#1773EA] dark:bg-[#212425] px-4 py-3 rounded-lg flex justify-center items-center shadow hover:bg-[#e7336b] hover:text-white">
+                                <i class="fa-brands fa-dribbble"></i>
+                            </div>
+                        </a>
+                        <a href="/">
+                            <div
+                                class="bg-[#f3f6f6] text-[#1773EA] dark:bg-[#212425] px-4 py-3 rounded-lg flex justify-center items-center shadow hover:bg-[#e7336b] hover:text-white">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-[#f3f6f6] dark:bg-[#1d1d1d] p-7 rounded-xl mt-8 mx-4 md:mx-8">
+                    <div class="flex gap-3 border-b border-gray-300 dark:border-gray-600 pb-3">
+                        <div
+                            class="flex self-start justify-center items-center p-3 bg-white dark:bg-black text-[#e93b81] rounded-lg shadow-md hover:bg-[#e7336b] hover:text-white">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                        </div>
+                        <div class="flex flex-col justify-center">
+                            <p class="text-xs">Phone</p>
+                            <p class="text-sm font-medium">+8801790362665</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-3 border-b border-gray-300 dark:border-gray-600 py-3">
+                        <div
+                            class="flex self-start justify-center items-center p-3 bg-white dark:bg-black text-[#e93b81] rounded-lg shadow-md hover:bg-[#e7336b] hover:text-white">
+                            <i class="fa-solid fa-envelope-open-text"></i>
+                        </div>
+                        <div class=" flex flex-col justify-center">
+                            <p class="text-xs">Email</p>
+                            <p class="text-sm font-medium">harun.ru.cse@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-3 border-b border-gray-300 dark:border-gray-600 py-3">
+                        <div
+                            class="flex self-start justify-center items-center p-3 bg-white dark:bg-black text-[#e93b81] rounded-lg shadow-md hover:bg-[#e7336b] hover:text-white">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class=" flex flex-col justify-center">
+                            <p class="text-xs">Location</p>
+                            <p class="text-sm font-medium">Binodpur, Rajshahi, Bangladesh</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-3 pt-3">
+                        <div
+                            class="flex self-start justify-center items-center p-3 bg-white dark:bg-black text-[#e93b81] rounded-lg shadow-md hover:bg-[#e7336b] hover:text-white">
+                            <i class="fa-solid fa-calendar-days"></i>
+                        </div>
+                        <div class="flex flex-col justify-center">
+                            <p class="text-xs">Birthday</p>
+                            <p class="text-sm font-medium">15 Aug, 1998</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center mt-5">
+                    <button
+                        class="border-none outline-none flex gap-3 px-6 py-3 rounded-full text-white bg-gradient-to-r from-[#fa5252] to-pink-600 hover:from-pink-600 hover:to-[#fa5252]">
+                        <img src="./src/assets/dowanload.png" alt="">
+                        <span>Download CV</span>
+                    </button>
+                </div>
+            </section>
+
+            <section class="lg:flex lg:flex-col lg:flex-grow lg:gap-10 pt-8 lg:py-12 px-4 md:px-8 lg:pt-32">
+                <!-- Desktop menu -->
+                <div class="hidden lg:flex self-end gap-5 bg-white dark:bg-[#111111] rounded-2xl p-10 w-[70%]">
+                    <a href="/about.html" class="flex-1">
+                        <div
+                            class="dark:bg-[#212425] dark:text-white dark:hover:bg-[#f3475a] active-tab flex flex-1 flex-col gap-2 items-center bg-[#f3f6f6] hover:bg-[#f3475a] text-gray-700 hover:text-white cursor-pointer rounded-xl p-4 font-semibold">
+                            <i class="fa-regular fa-user text-xl"></i>
+                            <p class="text-xs">About</p>
+                        </div>
+                    </a>
+                    <a href="/resume.html" class="flex-1">
+                        <div
+                            class="dark:bg-[#212425] dark:text-white dark:hover:bg-[#f3475a] flex flex-1 flex-col gap-2 items-center bg-[#f3f6f6] hover:bg-[#f3475a] text-gray-700 hover:text-white cursor-pointer rounded-xl p-4 font-semibold">
+                            <i class="fa-regular fa-file-lines text-xl"></i>
+                            <p class="text-xs">Resume</p>
+                        </div>
+                    </a>
+
+                    <a href="/works.html" class="flex-1">
+                        <div
+                            class="dark:bg-[#212425] dark:text-white dark:hover:bg-[#f3475a] flex flex-1 flex-col gap-2 items-center bg-[#f3f6f6] hover:bg-[#f3475a] text-gray-700 hover:text-white cursor-pointer rounded-xl p-4 font-semibold">
+                            <i class="fas fa-briefcase text-xl"></i>
+                            <p class="text-xs">Works</p>
+                        </div>
+                    </a>
+
+                    <a href="/blogs.html" class="flex-1">
+                        <div
+                            class="dark:bg-[#212425] dark:text-white dark:hover:bg-[#f3475a] flex flex-1 flex-col gap-2 items-center bg-[#f3f6f6] hover:bg-[#f3475a] text-gray-700 hover:text-white cursor-pointer rounded-xl p-4 font-semibold">
+                            <i class="fa-brands fa-blogger text-xl"></i>
+                            <p class="text-xs">Blogs</p>
+                        </div>
+                    </a>
+
+                    <a href="/contact.html" class="flex-1">
+                        <div
+                            class="dark:bg-[#212425] dark:text-white dark:hover:bg-[#f3475a] flex flex-1 flex-col gap-2 items-center bg-[#f3f6f6] hover:bg-[#f3475a] text-gray-700 hover:text-white cursor-pointer rounded-xl p-4 font-semibold">
+                            <i class="fa-solid fa-address-book text-xl"></i>
+                            <p class="text-xs">Contract</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="flex flex-col gap-12 bg-white dark:bg-[#111111] rounded-2xl px-0 lg:px-12 py-10">
+                    <!-- About Me -->
+                    <div class="hidden lg:flex flex-col gap-6">
+                        <h2 class="text-4xl font-semibold">About Me</h2>
+                        <div class="flex flex-col gap-3 text-gray-600 dark:text-gray-400">
+                            <p>I'm a MERN stack developer with a passion for web development and a desire to create
+                                unique, cutting-edge applications. I have a deep understanding of JavaScript, HTML, and
+                                CSS, and I'm always looking to improve my knowledge and skills.</p>
+                            <p> My experience with React, Node.js, MongoDB, and Express gives me the ability to create
+                                complex, dynamic websites that are secure, performant, and user-friendly. I'm driven to
+                                solve challenging problems and deliver projects on time and on budget.</p>
+                        </div>
+                    </div>
+                    <!-- Services -->
+                    <div>
+                        <h2 class="text-4xl font-semibold">What I do!</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 px-4 lg:px-0 py-6 mt-2 md:mt-4">
+                            <div
+                                class="bg-[#fcf4ff] dark:bg-[#1d1d1d] shadow-md px-6 py-8 rounded-lg flex gap-4 hover:shadow-lg">
+                                <img class="object-contain self-start" src="./src/assets/icon.svg" alt="">
+                                <div class="flex flex-col gap-3">
+                                    <h4 class="text-xl font-semibold">Web Application Development</h4>
+                                    <p class="text-gray-600 dark:text-gray-400">Web Application Development with React,
+                                        Node, and MongoDB</p>
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-[#fefaf0] dark:bg-[#1d1d1d] shadow-md px-6 py-8 rounded-lg flex gap-4 hover:shadow-lg">
+                                <img class="object-contain self-start" src="./src/assets/icon1.svg" alt="">
+                                <div class="flex flex-col gap-3">
+                                    <h4 class="text-xl font-semibold">Backend Development</h4>
+                                    <p class="text-gray-600 dark:text-gray-400">Backend Development with Express and
+                                        Mongoose</p>
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-[#fcf4ff] dark:bg-[#1d1d1d] shadow-md px-6 py-8 rounded-lg flex gap-4 hover:shadow-lg">
+                                <img class="object-contain self-start" src="./src/assets/icon4.svg" alt="">
+                                <div class="flex flex-col gap-3">
+                                    <h4 class="text-xl font-semibold">Frontend Development</h4>
+                                    <p class="text-gray-600 dark:text-gray-400">Create an dynamic, interactive user
+                                        interfaces with reusable components using React Js.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-[#f3faff] dark:bg-[#1d1d1d] shadow-md px-6 py-8 rounded-lg flex gap-4 hover:shadow-lg">
+                                <img class="object-contain self-start" src="./src/assets/icon5.svg" alt="">
+                                <div class="flex flex-col gap-3">
+                                    <h4 class="text-xl font-semibold">RESTful API Development</h4>
+                                    <p class="text-gray-600 dark:text-gray-400">I can build a robust and scalable APIs
+                                        with Node, express
+                                        and MongoDB.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Footer section -->
+                    <footer class="text-center p-4">
+                        <p class="text-sm text text-gray-800 dark:text-gray-400">© 2022 All Rights Reserved.</p>
+                    </footer>
+                </div>
+            </section>
+        </section>
+    </div>
+    <script src="./src/script.js"></script>
+</body>
+
+</html>
